@@ -1,0 +1,82 @@
+import Heading from '@/components/atoms/Heading'
+import Input from '@/components/common/Input'
+import React from 'react'
+import PlatformControls from './PlatformControls'
+
+const Mainglobal = () => {
+  return (
+    <div>
+    <Heading
+      title="Global Settings"
+      paragraph="Configure platform-wide settings"
+    />
+
+     <div className="mt-5">
+      <div className="space-y-8">
+        <section className="rounded-2xl border border-gray-100 bg-white p-6 shadow-sm">
+          <h2 className="mb-6 text-xl font-semibold text-slate-800">Platform Settings</h2>
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+            <Input
+              label="PLATFORM NAME"
+              placeholder="Trading Platform"
+              icon="ri-layout-grid-line" 
+              className="border-gray-200 border bg-slate-50/50"
+            />
+            <Input
+              label="SUPPORT EMAIL"
+              placeholder="support@platform.com"
+              icon="ri-mail-line"
+              className="border-gray-200 border bg-slate-50/50"
+            />
+          </div>
+        </section>
+        <section className="rounded-2xl border border-gray-100 bg-white p-6 shadow-sm">
+          <h2 className="mb-6 text-xl font-semibold text-slate-800">Trading Settings</h2>
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+            <div>
+              <Input
+                label="MAX TRADES PER STRATEGY"
+                placeholder="50"
+                type="number"
+                icon="ri-line-chart-line"
+                className="border-gray-200 border bg-slate-50/50"
+              />
+              <p className="mt-2 text-xs text-slate-400">Maximum trades allowed per strategy per day</p>
+            </div>
+            
+            <div>
+              <Input
+                label="MAX TRADES PER USER"
+                placeholder="20"
+                type="number"
+                icon="ri-user-settings-line"
+                className="border-gray-200 border bg-slate-50/50"
+              />
+              <p className="mt-2 text-xs text-slate-400">Maximum trades allowed per user per day</p>
+            </div>
+
+            <div className="md:col-span-1">
+              <Input
+                label="DEFAULT RISK LEVEL"
+                type="select"
+                icon="ri-shield-flash-line"
+                options={[
+                  { label: "Low", value: "low" },
+                  { label: "Medium", value: "medium" },
+                  { label: "High", value: "high" },
+                ]}
+                defaultValue="medium"
+                className="border-gray-200 border bg-slate-50/50"
+              />
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </div>
+    <PlatformControls/>
+    </div>
+  )
+}
+
+export default Mainglobal
