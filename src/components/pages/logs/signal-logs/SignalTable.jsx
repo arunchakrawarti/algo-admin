@@ -9,7 +9,7 @@ const SignalTable = () => {
     { 
       label: "SIGNAL ID", 
       key: "signalId",
-      render: (val) => <span className="font-bold text-[#101828]">{val}</span> // Bold look
+      render: (val) => <span className="font-bold text-[#101828]">{val}</span> 
     },
     { label: "STRATEGY", key: "strategy" },
     {
@@ -21,8 +21,8 @@ const SignalTable = () => {
           <span className={clsx(
             "inline-flex items-center px-3 py-1 rounded-full text-xs font-medium border",
             isSuccess 
-              ? "bg-[#ECFDF3] text-[#027A48] border-[#ABEFC6]" // Success Green
-              : "bg-[#FEF3F2] text-[#B42318] border-[#FECDCA]"  // Rejected Red
+              ? "bg-[#ECFDF3] text-[#027A48] border-[#ABEFC6]" 
+              : "bg-[#FEF3F2] text-[#B42318] border-[#FECDCA]"  
           )}>
             <span className={clsx(
               "w-1.5 h-1.5 mr-2 rounded-full",

@@ -68,8 +68,8 @@ const StatsCard = ({
              {change}
           </span>
           <span
-            className={`ml-1 font-normal text-[14px] ${
-              isGradient ? "text-white/60" : "text-green-500"
+            className={`ml-1 font-semibold text-[14px] ${
+              isGradient ? "text-[var(--color-white)]" : "text-green-500"
             }`}
           >
             {subtitle}

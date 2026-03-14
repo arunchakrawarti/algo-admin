@@ -28,14 +28,14 @@ const Input = ({
       {rest?.type === "textarea" ? (
         <div
           className={clsx(
-            "flex w-full gap-3 rounded-lg px-3 py-2 border border-gray-300 bg-white",
+            "flex w-full gap-3 rounded-lg px-3 py-2 border border-gray-300 bg-[var(--color-white)]",
             error && "border-red-400 ring-2 ring-red-300",
             className
           )}
         >
           {icon && (
             <span>
-              <i className={`${icon} ri-lg text-gray-400`} />
+              <i className={`${icon} ri-lg text-[var(--color-gray-400)]`} />
             </span>
           )}
 
@@ -48,14 +48,14 @@ const Input = ({
       ) : rest?.type === "select" ? (
         <div
           className={clsx(
-            "flex w-full items-center gap-3 rounded-lg px-3 py-1 border border-gray-300 bg-white",
+            "flex w-full items-center gap-3 rounded-lg px-3 py-1 border border-gray-300 bg-[var(--color-white)]",
             error && "border-red-400 ring-2 ring-red-300",
             className
           )}
         >
           {icon && (
             <span>
-              <i className={`${icon} ri-lg text-gray-400`} />
+              <i className={`${icon} ri-lg text-[var(--color-gray-400)]`} />
             </span>
           )}
 
@@ -83,14 +83,14 @@ const Input = ({
       ) : (
         <div
           className={clsx(
-            "flex w-full items-center gap-3 rounded-lg px-3 py-1 border border-gray-300 bg-white",
+            "flex w-full items-center gap-3 rounded-lg px-3 py-1 border border-gray-300 bg-[var(--color-white)]",
             error && "border-red-400 ring-2 ring-red-300",
             className
           )}
         >
           {icon && (
             <span>
-              <i className={`${icon} ri-lg text-gray-400`} />
+              <i className={`${icon} ri-lg text-[var(--color-gray-400)]`} />
             </span>
           )}
 
