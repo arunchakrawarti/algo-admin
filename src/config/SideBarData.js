@@ -2,22 +2,12 @@ export const SideBarData = [
   {
     title: "Dashboard",
     icon: "ri-dashboard-line",
-    link: "/dashboard",
+    link: "/",
   },
   {
     title: "Strategy Management",
     icon: "ri-line-chart-line",
     link: "/strategy-management",
-  },
-  {
-    title: "Broker Integration",
-    icon: "ri-flask-line",
-    link: "/broker-integration",
-  },
-  {
-    title: "Trade Management",
-    icon: "ri-arrow-left-right-line",
-    link: "/trade-management",
   },
   {
     title: "Subscriptions",
