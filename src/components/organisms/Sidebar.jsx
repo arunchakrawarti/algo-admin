@@ -39,13 +39,25 @@ const SideBar = ({ isMobile = false, isOpen = true, onClose }) => {
 
           </div>
 
-          <ul className="flex-1 overflow-y-auto px-4 py-2 space-y-3">
+          <ul className="flex-1 overflow-y-auto px-4 py-2 space-y-4 no-scrollbar">
 
-            {SideBarData.map((item, index) => (
-              <NavigationLink key={index} {...item} />
-            ))}
+  {SideBarData.map((section, index) => (
+    <div key={index}>
 
-          </ul>
+      <p className="px-4 text-xs font-semibold tracking-widest text-white/40 uppercase">
+        {section.section}
+      </p>
+
+      <div className="mt-2 space-y-2">
+        {section.items.map((item, i) => (
+          <NavigationLink key={i} {...item} />
+        ))}
+      </div>
+
+    </div>
+  ))}
+
+</ul>
 
         </nav>
       </aside>

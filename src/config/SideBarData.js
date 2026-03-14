@@ -1,79 +1,103 @@
 export const SideBarData = [
   {
-    title: "Dashboard",
-    icon: "ri-dashboard-line",
-    link: "/",
-  },
-  {
-    title: "Strategy Management",
-    icon: "ri-line-chart-line",
-    link: "/strategy-management",
-  },
-  {
-    title: "Subscriptions",
-    icon: "ri-wallet-3-line",
-    link: "/subscriptions",
-  },
-  {
-    title: "Orders",
-    icon: "ri-shopping-cart-line",
-    link: "/orders",
-  },
-
-  {
-    title: "Users",
-    icon: "ri-user-3-line",
-    link: "#",
-    children: [
+    section: "MAIN",
+    items: [
       {
-        title: "All Users",
-        icon: "ri-user-line",
-        link: "/users/all-users",
-      },
-      {
-        title: "Blocked Users",
-        icon: "ri-user-unfollow-line",
-        link: "/users/blocked-users",
+        title: "Dashboard",
+        icon: "ri-dashboard-line",
+        link: "/",
       },
     ],
   },
 
   {
-    title: "Settings",
-    icon: "ri-user-3-line",
-    link: "#",
-    children: [
+    section: "TRADING",
+    items: [
       {
-        title: "Global Settings",
-        icon: "ri-user-line",
-        link: "/settings/global-settings",
+        title: "Strategy Management",
+        icon: "ri-line-chart-line",
+        link: "/strategy-management",
       },
       {
-        title: "Risk Settings",
-        icon: "ri-user-unfollow-line",
-        link: "/settings/risk-settings",
+        title: "Broker Integration",
+        icon: "ri-flask-line",
+        link: "/broker-integration",
       },
       {
-        title: "Webhook Settings",
-        icon: "ri-user-unfollow-line",
-        link: "/settings/webhook-settings",
+        title: "Trade Management",
+        icon: "ri-arrow-left-right-line",
+        link: "/trade-management",
       },
     ],
   },
-   {
-    title: "Logs",
-    icon: "ri-user-3-line",
-    link: "#",
-    children: [
+
+  {
+    section: "MANAGEMENT",
+    items: [
       {
-        title: "Signal Logs",
-        icon: "ri-user-line",
-        link: "/logs/signal-logs",
+        title: "Subscriptions",
+        icon: "ri-wallet-3-line",
+        link: "/subscriptions",
       },
       {
-        title: "Execution Logs",
-        icon: "ri-user-unfollow-line",
-        link: "/logs/execution-logs",
+        title: "Orders",
+        icon: "ri-shopping-cart-line",
+        link: "/orders",
+      },
+      {
+        title: "Users",
+        icon: "ri-user-3-line",
+        link: "#",
+        children: [
+          {
+            title: "All Users",
+            link: "/users/all-users",
+          },
+          {
+            title: "Blocked Users",
+            link: "/users/blocked-users",
+          },
+        ],
+      },
+    ],
+  },
+
+  {
+    section: "SYSTEM",
+    items: [
+      {
+        title: "Settings",
+        icon: "ri-settings-3-line",
+        link: "#",
+        children: [
+          {
+            title: "Global Settings",
+            link: "/settings/global-settings",
+          },
+          {
+            title: "Risk Settings",
+            link: "/settings/risk-settings",
+          },
+          {
+            title: "Webhook Settings",
+            link: "/settings/webhook-settings",
+          },
+        ],
+      },
+      {
+        title: "Logs",
+        icon: "ri-file-list-3-line",
+        link: "#",
+        children: [
+          {
+            title: "Signal Logs",
+            link: "/logs/signal-logs",
+          },
+          {
+            title: "Execution Logs",
+            link: "/logs/execution-logs",
+          },
+        ],
       },
     ],
   },
