@@ -2,6 +2,7 @@
 
 import React from "react";
 import { useRouter } from "next/navigation";
+import Button from "../common/Button";
 
 const Heading = ({
   title,
@@ -15,18 +16,16 @@ const Heading = ({
 
   return (
     <div className="flex flex-wrap items-center justify-between gap-4">
-
-      {/* LEFT SIDE */}
       <div>
 
         {showBack && (
-          <button
+          <Button
             onClick={() => router.push(backRoute)}
             className="flex items-center gap-2 mb-2 text-gray-500 hover:text-black"
           >
             <i className="ri-arrow-left-line text-xl"></i>
             Back
-          </button>
+          </Button>
         )}
 
         <h1 className="text-2xl font-semibold text-gray-800">
@@ -54,7 +53,7 @@ const Heading = ({
           )}
 
           {actions.map((btn, i) => (
-            <button
+            <Button
               key={i}
               onClick={() => router.push(btn.route)}
             className={`flex items-center gap-2 px-5 py-2 rounded-full text-sm font-medium transition
@@ -67,7 +66,7 @@ ${
             >
               {btn.icon && <i className={btn.icon}></i>}
               {btn.text}
-            </button>
+            </Button>
           ))}
 
         </div>

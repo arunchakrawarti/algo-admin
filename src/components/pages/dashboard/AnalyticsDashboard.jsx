@@ -1,4 +1,5 @@
 "use client";
+import Button from "@/components/common/Button";
 import React from "react";
 import {
   AreaChart,
@@ -53,7 +54,7 @@ const AnalyticsDashboard = () => {
 
             <div className="flex gap-1 p-1 rounded-xl">
               {["1D", "1W", "1M", "3M"].map((t) => (
-                <button
+                <Button
                   key={t}
                   className={`px-3 py-1.5 text-xs font-semibold rounded-lg ${
                     t === "1M"
@@ -62,7 +63,7 @@ const AnalyticsDashboard = () => {
                   }`}
                 >
                   {t}
-                </button>
+                </Button>
               ))}
             </div>
           </div>

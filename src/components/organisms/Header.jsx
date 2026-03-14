@@ -21,7 +21,7 @@ export default function Header({ onMenuClick }) {
             <Input
               placeholder="Search strategies, users, trades..."
               icon="ri-search-line text-gray-400"
-              className="bg-[var(--color-gray-100)] border-none h-10 rounded-full pl-10 text-sm"
+              className="bg-gray-100 border-none h-10 rounded-full pl-10 text-sm"
             />
           </div>
 
@@ -36,13 +36,13 @@ export default function Header({ onMenuClick }) {
           </button>
 
           {/* theme icon */}
-          <button className="text-[var(--color-gray-500)] text-lg hover:text-gray-700">
+          <button className="text-gray-500 text-lg hover:text-gray-700">
             <i className="ri-sun-line"></i>
           </button>
 
           {/* notification */}
           <div className="relative">
-            <button className="text-[var(--color-gray-500)] text-lg hover:text-gray-700">
+            <button className="text-gray-500 text-lg hover:text-gray-700">
               <i className="ri-notification-3-line"></i>
             </button>
 
@@ -51,20 +51,20 @@ export default function Header({ onMenuClick }) {
           </div>
 
           {/* divider */}
-          <div className="h-6 w-px bg-[var(--color-gray-200)]"></div>
+          <div className="h-6 w-px bg-gray-200"></div>
 
           {/* user info */}
           <div className="flex items-center gap-3">
 
-            <div className="flex h-9 w-9 items-center justify-center rounded-full bg-gradient-to-r from-[var(--gradient-start)] to-[var(--gradient-end)] text-[var(--color-white)] font-semibold">
+            <div className="flex h-9 w-9 items-center justify-center rounded-full bg-gradient-to-r from-[var(--gradient-start)] to-[var(--gradient-end)] text-white font-semibold">
               A
             </div>
 
             <div className="hidden sm:block">
-              <p className="text-sm font-medium text-[var(--color-gray-800)]">
+              <p className="text-sm font-medium text-gray-800">
                 Admin User
               </p>
-              <p className="text-xs text-[var(--color-gray-800)]">
+              <p className="text-xs text-gray-500">
                 Super Admin
               </p>
             </div>
