@@ -10,9 +10,9 @@ const StrategyCard = ({ strategy }) => {
   const isActive = status === "Active";
 
   return (
-    <div className="bg-white rounded-2xl shadow-md overflow-hidden border border-gray-100 flex flex-col h-full transition hover:shadow-xl">
+    <div className="bg-[var(--color-white)] rounded-2xl shadow-md overflow-hidden border border-gray-100 flex flex-col h-full transition hover:shadow-xl">
         
-      <div className={`${headerBg} p-4 sm:p-5 text-white`}>
+      <div className={`${headerBg} p-4 sm:p-5 text-[var(--color-white)]`}>
         <div className="flex justify-between items-start gap-3">
 
           <div>
@@ -48,7 +48,7 @@ const StrategyCard = ({ strategy }) => {
               className={`${item.bg} ${item.border} p-3 sm:p-4 rounded-xl border`}
             >
 
-              <div className="flex items-center gap-2 mb-1 text-[10px] sm:text-xs font-bold uppercase tracking-wider text-gray-500">
+              <div className="flex items-center gap-2 mb-1 text-[10px] sm:text-xs font-bold uppercase tracking-wider text-[var(--color-gray-500)]">
 
                 <Icon size={14} className={item.color} />
 
@@ -70,7 +70,7 @@ const StrategyCard = ({ strategy }) => {
       <div className="px-4 sm:px-5 pb-4 flex justify-between items-center border-b border-gray-100">
 
         <div>
-          <p className="text-[10px] font-bold text-gray-400 uppercase">
+          <p className="text-[10px] font-bold text-[var(--color-gray-400)] uppercase">
             Avg Profit
           </p>
 
@@ -80,7 +80,7 @@ const StrategyCard = ({ strategy }) => {
         </div>
 
         <div className="text-right">
-          <p className="text-[10px] font-bold text-gray-400 uppercase">
+          <p className="text-[10px] font-bold text-[var(--color-gray-400)] uppercase">
             SL / Target
           </p>
 
@@ -91,7 +91,7 @@ const StrategyCard = ({ strategy }) => {
 
       </div>
 
-      <div className="grid grid-cols-3 divide-x divide-gray-100 bg-gray-50">
+      <div className="grid grid-cols-3 divide-x divide-gray-100 bg-[var(--color-gray-50)]">
 
         <Button variant="outline">
           <History size={16} />

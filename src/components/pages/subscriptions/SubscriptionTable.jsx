@@ -5,7 +5,7 @@ import { planTableConfig } from "../../../config/plantable";
 
 export default function SubscriptionTable() {
   return (
-    <div className="mt-6 bg-white rounded-md">
+    <div className="mt-6 bg-[var(--color-white)] rounded-md">
       <h2 className="text-xl font-semibold p-2">All Plans Overview</h2>
 
       <BasicTable

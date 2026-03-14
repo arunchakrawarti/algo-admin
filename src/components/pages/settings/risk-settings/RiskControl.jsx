@@ -6,9 +6,9 @@ import React from 'react'
 const RiskControl = () => {
   return (
     <div>
-      <div className="w-full mt-5  p-6 bg-white border border-gray-100 shadow-2xl rounded-[1rem]">
+      <div className="w-full mt-5  p-6 bg-[var(--color-white)] border border-gray-100 shadow-2xl rounded-[1rem]">
         
-        <h2 className="mb-8 text-2xl font-bold text-[#1E293B]">Risk Controls</h2>
+        <h2 className="mb-8 text-2xl font-bold text-[var(--color-gray-800)]">Risk Controls</h2>
         <div className="space-y-4">
           {controls.map((control) => (
             <OverviewCard

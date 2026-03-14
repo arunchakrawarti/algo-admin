@@ -12,7 +12,7 @@ const MainSettings = () => {
     />
 
 
-    <div className="rounded-2xl border border-gray-100 bg-white mt-5 p-8 shadow-sm">
+    <div className="rounded-2xl border border-gray-100 bg-[var(--color-white)] mt-5 p-8 shadow-sm">
   {/* 1. Position Limits Section */}
   <section>
     <h2 className="mb-6 text-xl font-semibold text-slate-800">Position Limits</h2>
@@ -23,9 +23,9 @@ const MainSettings = () => {
           placeholder="10"
           icon=""
           type="number"
-          className=" border border-gray-200 bg-white"
+          className=" border border-gray-200 bg-[var(--color-white)]"
         />
-        <p className="text-[13px] text-slate-500">Maximum position size as % of account balance</p>
+        <p className="text-[13px] text-[var(--color-gray-500)]">Maximum position size as % of account balance</p>
       </div>
 
       <div className="space-y-2">
@@ -34,9 +34,9 @@ const MainSettings = () => {
           placeholder="5"
           icon=""
           type="number"
-          className=" border border-gray-200 bg-white"
+          className=" border border-gray-200 bg-[var(--color-white)]"
         />
-        <p className="text-[13px] text-slate-500">Maximum allowed leverage multiplier</p>
+        <p className="text-[13px] text-[var(--color-gray-500)]">Maximum allowed leverage multiplier</p>
       </div>
 
       <div className="space-y-2 md:col-span-2">
@@ -45,9 +45,9 @@ const MainSettings = () => {
           placeholder="20"
           icon=""
           type="number"
-          className=" border border-gray-200 bg-white"
+          className=" border border-gray-200 bg-[var(--color-white)]"
         />
-        <p className="text-[13px] text-slate-500">Minimum margin required for positions</p>
+        <p className="text-[13px] text-[var(--color-gray-500)]">Minimum margin required for positions</p>
       </div>
     </div>
   </section>
@@ -56,7 +56,7 @@ const MainSettings = () => {
 
   {/* 2. Loss Limits Section */}
   <section>
-    <h2 className="mb-6 text-xl font-semibold text-slate-800">Loss Limits</h2>
+    <h2 className="mb-6 text-xl font-semibold text-[var(--color-gray-800)]">Loss Limits</h2>
     <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
       <div className="space-y-2">
         <Input
@@ -64,7 +64,7 @@ const MainSettings = () => {
           placeholder="2"
           icon=""
           type="number"
-          className="border border-gray-200 bg-white"
+          className="border border-gray-200 bg-[var(--color-white)]"
         />
       </div>
       <div className="space-y-2">
@@ -73,7 +73,7 @@ const MainSettings = () => {
           placeholder="5"
           icon=""
            type="number"
-          className="border border-gray-200 bg-white"
+          className="border border-gray-200 bg-[var(--color-white)]"
         />
       </div>
       <div className="space-y-2">
@@ -82,7 +82,7 @@ const MainSettings = () => {
           icon=""
            type="number"
           placeholder="15"
-          className="border border-gray-200 bg-white"
+          className="border border-gray-200 bg-[var(--color-white)]"
         />
       </div>
     </div>
@@ -92,7 +92,7 @@ const MainSettings = () => {
 
   {/* 3. Risk Parameters Section */}
   <section>
-    <h2 className="mb-6 text-xl font-semibold text-slate-800">Risk Parameters</h2>
+    <h2 className="mb-6 text-xl font-semibold text-[var(--color-gray-800)]">Risk Parameters</h2>
     <div className="max-w-md space-y-2">
       <Input
         label="Risk:Reward Ratio"
@@ -103,7 +103,7 @@ const MainSettings = () => {
           { label: "1:3", value: "1:3" }
         ]}
         defaultValue="1:2"
-        className="border border-gray-200 bg-white"
+        className="border border-gray-200 bg-[var(--color-white)]"
       />
       <p className="text-[13px] text-slate-500">Minimum risk to reward ratio for trades</p>
     </div>

@@ -20,7 +20,7 @@ const BrokerActivityDashboard = () => {
 
   return (
     <div className="flex flex-col lg:flex-row gap-6 mt-5">
-      <div className="flex-1 bg-white rounded-2xl p-6 shadow-sm border border-slate-100">
+      <div className="flex-1 bg-[var(--color-white)] rounded-2xl p-6 shadow-sm border border-slate-100">
         <div className="flex justify-between items-start mb-6">
           <div>
             <h2 className="text-xl font-bold text-slate-800">Broker Connections</h2>
@@ -52,7 +52,7 @@ const BrokerActivityDashboard = () => {
           ))}
         </div>
       </div>
-      <div className="flex-1 bg-white rounded-2xl p-6 shadow-sm border border-slate-100">
+      <div className="flex-1 bg-[var(--color-white)] rounded-2xl p-6 shadow-sm border border-slate-100">
         <div className="flex justify-between items-start mb-6">
           <div>
             <h2 className="text-xl font-bold text-slate-800">Recent Activity</h2>

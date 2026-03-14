@@ -9,8 +9,8 @@ const PerformanceExecution = () => {
   ];
 
   return (
-    <div className=" mt-5 p-6 bg-white rounded-3xl border border-gray-100 shadow-sm">
-      <h2 className="text-xl font-bold text-slate-800 mb-6 px-2">
+    <div className=" mt-5 p-6 bg-[var(--color-white)] rounded-3xl border border-gray-100 shadow-sm">
+      <h2 className="text-xl font-bold text-[var(--color-gray-800)] mb-6 px-2">
         Performance Insights
       </h2>
       

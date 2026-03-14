@@ -17,7 +17,7 @@ const NavigationLink = ({ title, icon, link, children }) => {
         className={`flex items-center justify-between px-4 py-2 rounded-xl cursor-pointer transition
         ${
           pathname === link
-            ? "bg-white/20 text-white"
+            ? "bg-white/20 text-[var(--color-white)]"
             : "text-white/80 hover:bg-white/10"
         }`}
       >

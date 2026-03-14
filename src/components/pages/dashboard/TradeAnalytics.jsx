@@ -27,10 +27,10 @@ const TradeAnalytics = () => {
     <div className="mt-5">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 max-w-7xl mx-auto">
     
-        <div className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm">
+        <div className="bg-[var(--color-white)] p-6 rounded-2xl border border-gray-100 shadow-sm">
           <div className="mb-6">
-            <h3 className="text-lg font-bold text-slate-800">Daily Trades</h3>
-            <p className="text-sm text-gray-400">Volume over last 14 days</p>
+            <h3 className="text-lg font-bold text-[var(--color-gray-800)]">Daily Trades</h3>
+            <p className="text-sm text-[var(--color-gray-400)]">Volume over last 14 days</p>
           </div>
           <div className="h-[300px] w-full">
             <ResponsiveContainer width="100%" height="100%">
@@ -63,10 +63,10 @@ const TradeAnalytics = () => {
           </div>
         </div>
         
-        <div className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm">
+        <div className="bg-[var(--color-white)] p-6 rounded-2xl border border-gray-100 shadow-sm">
           <div className="mb-6">
-            <h3 className="text-lg font-bold text-slate-800">Signals Today</h3>
-            <p className="text-sm text-gray-400">Hourly signal activity</p>
+            <h3 className="text-lg font-bold text-[var(--color-gray-800)]">Signals Today</h3>
+            <p className="text-sm text-[var(--color-gray-400)]">Hourly signal activity</p>
           </div>
           <div className="h-[300px] w-full">
             <ResponsiveContainer width="100%" height="100%">

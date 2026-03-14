@@ -19,19 +19,19 @@ const BasicTable = ({
   return (
     <div
       className={clsx(
-        "w-full overflow-x-auto shadow-xs border border-gray-200 bg-white",
+        "w-full overflow-x-auto shadow-xs border border-gray-200 bg-[var(--color-white)]",
         wrapperClassName ?? "rounded-xl" // 👈 default rounded
       )}
     >
       <table className="min-w-[900px] w-full border-collapse">
-        <thead className="bg-[#F9FAFB]">
+        <thead className="bg-[var(--color-gray-200)]">
           <tr>
             {columns.map((col, index) => (
               <th
                 key={index}
                 className="px-4 py-4 text-left whitespace-nowrap
                 font-inter font-bold text-[0.875rem]
-                tracking-[-0.009375rem] text-[#364153]"
+                tracking-[-0.009375rem] text-[var(--color-gray-600)]"
               >
                 {col.label}
               </th>
@@ -40,7 +40,7 @@ const BasicTable = ({
             {actions && (
               <th className="px-4 py-4 text-left whitespace-nowrap
               font-inter font-bold text-[0.875rem]
-              tracking-[-0.009375rem] text-[#364153]">
+              tracking-[-0.009375rem] text-[var(--color-gray-600)]">
                 Action
               </th>
             )}
@@ -64,7 +64,7 @@ const BasicTable = ({
                     key={index}
                     className="px-4 py-4 whitespace-nowrap
                     font-inter font-normal text-[0.975rem]
-                    tracking-[-0.009375rem] text-[#101828]"
+                    tracking-[-0.009375rem] text-[var(--color-gray-900)]"
                   >
                     {value}
                   </td>

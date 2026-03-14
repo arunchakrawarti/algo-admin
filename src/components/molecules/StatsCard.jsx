@@ -20,14 +20,14 @@ const StatsCard = ({
       className={`relative overflow-hidden rounded-2xl p-6 shadow-sm transition-all hover:shadow-md h-full
       ${
         isGradient
-          ? `text-white ${gradient}`
-          : "bg-white border border-gray-100"
+          ? `text-[var(--color-white)] ${gradient}`
+          : "bg-[var(--color-white)] border border-gray-100"
       }`}
     >
       <div className="flex items-center justify-between mb-4 relative z-10">
         <div
           className={`p-3 rounded-xl ${
-            isGradient ? "bg-white/20 text-white" : `${iconBg} ${iconColor}`
+            isGradient ? "bg-white/20 text-[var(--color-white)]" : `${iconBg} ${iconColor}`
           }`}
         >
           {Icon && <Icon size={22} strokeWidth={2.5} />}
@@ -50,7 +50,7 @@ const StatsCard = ({
       <div className="relative z-10">
         <h4
           className={`text-sm font-medium mb-1 ${
-            isGradient ? "text-white/80" : "text-gray-500"
+            isGradient ? "text-white/80" : "text-[var(--color-gray-500)]"
           }`}
         >
           {title}
@@ -58,13 +58,13 @@ const StatsCard = ({
 
         <h2
           className={`text-3xl font-bold ${
-            isGradient ? "text-white" : "text-slate-900"
+            isGradient ? "text-[var(--color-white)]" : "text-slate-900"
           }`}
         >
           {value}
         </h2>
         <p className="mt-2 text-[14px]">
-          <span className={`font-bold ${isGradient ? "text-white" : isPositive ? "text-green-500" : "text-red-500"}`}>
+          <span className={`font-bold ${isGradient ? "text-[var(--color-white)]" : isPositive ? "text-green-500" : "text-red-500"}`}>
              {change}
           </span>
           <span

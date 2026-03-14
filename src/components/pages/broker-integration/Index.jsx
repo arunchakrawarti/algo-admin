@@ -32,10 +32,10 @@ const ExpiringTimer = ({ targetDate = "2026-12-31T23:59:59" }) => {
 
   const Unit = ({ val, label }) => (
     <div className="flex flex-col items-center min-w-[35px] sm:min-w-[45px]">
-      <span className="text-white text-lg sm:text-2xl font-bold leading-none">
+      <span className="text-[var(--color-white)] text-lg sm:text-2xl font-bold leading-none">
         {format(val)}
       </span>
-      <span className="text-gray-400 text-[8px] sm:text-[10px] font-bold mt-1 uppercase tracking-tight">
+      <span className="text-[var(--color-gray-400)] text-[8px] sm:text-[10px] font-bold mt-1 uppercase tracking-tight">
         {label}
       </span>
     </div>
@@ -50,13 +50,13 @@ const ExpiringTimer = ({ targetDate = "2026-12-31T23:59:59" }) => {
 
         <div className="flex flex-wrap items-center justify-center sm:justify-start gap-2 sm:gap-3">
           <Unit val={timeLeft.days} label="Days" />
-          <span className="text-gray-400 font-bold text-sm">:</span>
+          <span className="text-[var(--color-gray-400)] font-bold text-sm">:</span>
 
           <Unit val={timeLeft.hours} label="Hrs" />
-          <span className="text-gray-400 font-bold text-sm">:</span>
+          <span className="text-[var(--color-gray-400)] font-bold text-sm">:</span>
 
           <Unit val={timeLeft.minutes} label="Min" />
-          <span className="text-gray-400 font-bold text-sm">:</span>
+          <span className="text-[var(--color-gray-400)] font-bold text-sm">:</span>
 
           <Unit val={timeLeft.seconds} label="Sec" />
         </div>

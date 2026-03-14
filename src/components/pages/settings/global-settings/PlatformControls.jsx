@@ -7,7 +7,7 @@ import Button from "@/components/common/Button";
 const PlatformControls = () => {
   return (
     <div className="mt-5">
-      <div className="w-full  p-6 bg-white border border-gray-100 shadow-2xl rounded-[1rem]">
+      <div className="w-full  p-6 bg-[var(--color-white)] border border-gray-100 shadow-2xl rounded-[1rem]">
         
         <h2 className="mb-8 text-2xl font-bold text-[#1E293B]">System Controls</h2>
         <div className="space-y-4">

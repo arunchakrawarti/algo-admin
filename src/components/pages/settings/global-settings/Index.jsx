@@ -13,7 +13,7 @@ const Mainglobal = () => {
 
      <div className="mt-5">
       <div className="space-y-8">
-        <section className="rounded-2xl border border-gray-100 bg-white p-6 shadow-sm">
+        <section className="rounded-2xl border border-gray-100 bg-[var(--color-white)] p-6 shadow-sm">
           <h2 className="mb-6 text-xl font-semibold text-slate-800">Platform Settings</h2>
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
             <Input
@@ -30,7 +30,7 @@ const Mainglobal = () => {
             />
           </div>
         </section>
-        <section className="rounded-2xl border border-gray-100 bg-white p-6 shadow-sm">
+        <section className="rounded-2xl border border-gray-100 bg-[var(--color-white)] p-6 shadow-sm">
           <h2 className="mb-6 text-xl font-semibold text-slate-800">Trading Settings</h2>
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
             <div>
@@ -41,7 +41,7 @@ const Mainglobal = () => {
                 icon="ri-line-chart-line"
                 className="border-gray-200 border bg-slate-50/50"
               />
-              <p className="mt-2 text-xs text-slate-400">Maximum trades allowed per strategy per day</p>
+              <p className="mt-2 text-xs text-[var(--color-gray-400)]">Maximum trades allowed per strategy per day</p>
             </div>
             
             <div>
@@ -52,7 +52,7 @@ const Mainglobal = () => {
                 icon="ri-user-settings-line"
                 className="border-gray-200 border bg-slate-50/50"
               />
-              <p className="mt-2 text-xs text-slate-400">Maximum trades allowed per user per day</p>
+              <p className="mt-2 text-xs text-[var(--color-gray-400)]">Maximum trades allowed per user per day</p>
             </div>
 
             <div className="md:col-span-1">

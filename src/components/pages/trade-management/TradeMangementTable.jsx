@@ -7,7 +7,7 @@ import { tradeTableConfig } from "../../../config/tradetable";
 
 const TableActions = ({ row }) => {
   return (
-    <button className="text-gray-400 hover:text-blue-600 transition-colors">
+    <button className="text-[var(--color-gray-400)] hover:text-blue-600 transition-colors">
       <Eye size={18} />
     </button>
   );
@@ -18,9 +18,9 @@ const TradeMangementTable = () => {
     <div className="mt-5">
 
       {/* Filters */}
-      <div className="w-full bg-white border border-gray-200 rounded-2xl p-6 shadow-sm">
+      <div className="w-full bg-[var(--color-white)] border border-gray-200 rounded-2xl p-6 shadow-sm">
 
-        <div className="flex items-center gap-2 mb-6 text-[#1e293b]">
+        <div className="flex items-center gap-2 mb-6 text-[var(--color-gray-800)]">
           <Filter size={18} className="text-blue-600" />
           <span className="font-bold text-sm tracking-tight">Filters</span>
         </div>
@@ -30,7 +30,7 @@ const TradeMangementTable = () => {
           <Input
             label="DATE FROM"
             type="date"
-            className="border border-gray-200 !bg-white rounded-xl h-[48px]"
+            className="border border-gray-200 bg-[var(--color-white)] rounded-xl h-[48px]"
             labelClass="text-[10px] font-bold text-slate-400 uppercase tracking-wider"
             icon=""
           />

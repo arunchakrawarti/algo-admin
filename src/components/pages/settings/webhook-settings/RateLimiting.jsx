@@ -5,10 +5,10 @@ import React from 'react'
 
 const RateLimiting = () => {
   return (
-   <div className="rounded-2xl mt-5 border border-gray-100 bg-white p-8 shadow-sm space-y-8">
+   <div className="rounded-2xl mt-5 border border-gray-100 bg-[var(--color-white)] p-8 shadow-sm space-y-8">
      
   <section>
-    <h2 className="mb-6 text-xl font-semibold text-slate-800">Rate Limiting</h2>
+    <h2 className="mb-6 text-xl font-semibold text-[var(--color-gray-800)]">Rate Limiting</h2>
 
     <div className="grid grid-cols-1 gap-8 md:grid-cols-3 mb-8">
 
@@ -18,9 +18,9 @@ const RateLimiting = () => {
           placeholder="100"
           type="number"
           icon=""
-          className="border border-gray-200 bg-white"
+          className="border border-gray-200 bg-[var(--color-white)]"
         />
-        <p className="text-[13px] mt-2 text-slate-500">
+        <p className="text-[13px] mt-2 text-[var(--color-gray-500)]">
           Maximum webhooks allowed per minute
         </p>
       </div>
@@ -31,9 +31,9 @@ const RateLimiting = () => {
           placeholder="3"
           type="number"
           icon=""
-          className="border border-gray-200 bg-white"
+          className="border border-gray-200 bg-[var(--color-white)]"
         />
-        <p className="text-[13px] mt-2 text-slate-500">
+        <p className="text-[13px] mt-2 text-[var(--color-gray-500)]">
           Number of retry attempts for failed webhooks
         </p>
       </div>
@@ -44,9 +44,9 @@ const RateLimiting = () => {
           placeholder="30"
           type="number"
           icon=""
-          className="border border-gray-200 bg-white"
+          className="border border-gray-200 bg-[var(--color-white)]"
         />
-        <p className="text-[13px] mt-2 text-slate-500">
+        <p className="text-[13px] mt-2 text-[var(--color-gray-500)]">
           Request timeout in seconds
         </p>
       </div>

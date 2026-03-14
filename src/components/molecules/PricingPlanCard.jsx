@@ -13,8 +13,8 @@ const PricingPlanCard = ({
   gradient,
 }) => {
   return (
-    <div className="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden w-full">
-      <div className={`relative p-5 sm:p-6 lg:p-7 text-white bg-gradient-to-r ${gradient}`}>
+    <div className="bg-[var(--color-white)] rounded-2xl shadow-sm border border-gray-200 overflow-hidden w-full">
+      <div className={`relative p-5 sm:p-6 lg:p-7 text-[var(--color-white)] bg-gradient-to-r ${gradient}`}>
         <div className="absolute -top-6 -right-6 w-24 sm:w-28 lg:w-32 h-24 sm:h-28 lg:h-32 bg-white/10 rounded-full blur-xl"></div>
 
         <h3 className="text-base sm:text-lg font-semibold">{title}</h3>
@@ -24,7 +24,7 @@ const PricingPlanCard = ({
         <p className="text-xs sm:text-sm opacity-90">{duration}</p>
       </div>
       <div className="p-5 sm:p-6">
-        <div className="flex items-center justify-between text-xs sm:text-sm text-gray-600 flex-wrap gap-2">
+        <div className="flex items-center justify-between text-xs sm:text-sm text-[var(--color-gray-600)] flex-wrap gap-2">
           <div className="flex items-center gap-2">
             <Users size={16} />
             <span className="font-medium">{subscribers}</span>
@@ -39,7 +39,7 @@ const PricingPlanCard = ({
 
         <hr className="my-4 border-gray-200" />
         <div>
-          <p className="text-xs text-gray-500 font-semibold uppercase">
+          <p className="text-xs text-[var(--color-gray-500)] font-semibold uppercase">
             Strategies Included
           </p>
 
@@ -48,14 +48,14 @@ const PricingPlanCard = ({
           </p>
         </div>
         <div className="mt-4 space-y-2 sm:space-y-3">
-          <p className="text-xs text-gray-500 font-semibold uppercase">
+          <p className="text-xs text-[var(--color-gray-500)] font-semibold uppercase">
             Features
           </p>
 
           {features.map((item, index) => (
             <div
               key={index}
-              className="flex items-start gap-2 text-xs sm:text-sm text-gray-600"
+              className="flex items-start gap-2 text-xs sm:text-sm text-[var(--color-gray-600)]"
             >
               <CheckCircle
                 size={16}

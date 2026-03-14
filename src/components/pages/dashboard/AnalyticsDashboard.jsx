@@ -39,14 +39,14 @@ const AnalyticsDashboard = () => {
   return (
     <div className="mt-5">
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
-        <div className="lg:col-span-2 bg-white p-6 rounded-2xl border border-gray-100 shadow-sm">
+        <div className="lg:col-span-2 bg-[var(--color-white)] p-6 rounded-2xl border border-gray-100 shadow-sm">
           
           <div className="flex justify-between items-center mb-6">
             <div>
               <h3 className="text-lg font-bold text-slate-800">
                 Equity Curve
               </h3>
-              <p className="text-sm text-gray-400">
+              <p className="text-sm text-[var(--color-gray-400)]">
                 Portfolio performance over time
               </p>
             </div>
@@ -57,8 +57,8 @@ const AnalyticsDashboard = () => {
                   key={t}
                   className={`px-3 py-1.5 text-xs font-semibold rounded-lg ${
                     t === "1M"
-                      ? "bg-blue-600 text-white"
-                      : "text-gray-500 hover:bg-gray-200"
+                      ? "bg-blue-600 text-[var(--color-white)]"
+                      : "text-[var(--color-gray-500)] hover:bg-gray-200"
                   }`}
                 >
                   {t}
@@ -132,13 +132,13 @@ const AnalyticsDashboard = () => {
             </ResponsiveContainer>
           </div>
         </div>
-        <div className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm flex flex-col">
+        <div className="bg-[var(--color-white)] p-6 rounded-2xl border border-gray-100 shadow-sm flex flex-col">
           
           <div className="mb-4">
             <h3 className="text-lg font-bold text-slate-800">
               Plan Distribution
             </h3>
-            <p className="text-sm text-gray-400">
+            <p className="text-sm text-[var(--color-gray-400)]">
               Subscribers by plan type
             </p>
           </div>
