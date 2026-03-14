@@ -13,7 +13,7 @@ const MainStrategy = () => {
           {
             text: "Create Strategy",
             route: "/reports",
-            icon: "ri-arrow-right-up-line",
+            icon: "ri-add-line",
             variant: "gradient",
           },
         ]}

@@ -13,7 +13,7 @@ const MainOrders = () => {
     {
       text: "Export",
       route: "/reports",
-      icon: "ri-arrow-right-up-line",
+      icon: "ri-download-line",
       variant: "gradient",
     },
   ]}

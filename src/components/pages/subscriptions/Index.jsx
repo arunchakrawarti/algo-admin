@@ -13,7 +13,7 @@ const Mainsubscription = () => {
     {
       text: "Create Plan",
       route: "/reports",
-      icon: "ri-arrow-right-up-line",
+      icon: "ri-add-line",
       variant: "gradient",
     },
   ]}
