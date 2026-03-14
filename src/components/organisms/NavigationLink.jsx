@@ -1,30 +1,41 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-const NavigationLink = ({ title, icon, link, children }) => {
+const NavigationLink = ({ title, icon, link, children = [] }) => {
   const pathname = usePathname();
-  const [open, setOpen] = useState(false);
 
-  const hasChildren = children && children.length > 0;
+  const hasChildren = children.length > 0;
+
+  const isChildActive = children.some((child) => pathname === child.link);
+
+  const [open, setOpen] = useState(isChildActive);
+
+  useEffect(() => {
+    if (isChildActive) {
+      setOpen(true);
+    }
+  }, [pathname]);
 
   return (
     <li>
       <Link
         href={link || "#"}
         onClick={() => hasChildren && setOpen(!open)}
-        className={`flex items-center justify-between px-4 py-2 rounded-xl cursor-pointer transition
+        className={`flex items-center justify-between px-4 py-2 rounded-xl transition
         ${
-          pathname === link
-            ? "bg-white/20 text-[var(--color-white)]"
+          pathname === link || isChildActive
+            ? "bg-white/20 text-white"
             : "text-white/80 hover:bg-white/10"
         }`}
       >
-
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-3 min-w-0">
           <i className={`${icon} text-lg`}></i>
-          <span className="text-md font-medium">{title}</span>
+
+          <span className="text-sm font-medium truncate">
+            {title}
+          </span>
         </div>
 
         {hasChildren && (
@@ -34,24 +45,27 @@ const NavigationLink = ({ title, icon, link, children }) => {
             }`}
           ></i>
         )}
-
       </Link>
+
       {hasChildren && open && (
-        <ul className="ml-8 mt-2 space-y-2 py-2 text-sm text-white/70">
+        <ul className="ml-6 md:ml-8 mt-2 space-y-2 text-sm">
           {children.map((child, index) => (
             <li key={index}>
               <Link
                 href={child.link}
-                className="flex items-center gap-2 hover:text-white"
+                className={`flex items-center gap-2 px-3 py-2 rounded-lg transition w-full
+                ${
+                  pathname === child.link
+                    ? "bg-white/20 text-white"
+                    : "text-white/70 hover:text-white hover:bg-white/10"
+                }`}
               >
-                <i className={`${child.icon} text-sm`}></i>
                 {child.title}
               </Link>
             </li>
           ))}
         </ul>
       )}
-
     </li>
   );
 };

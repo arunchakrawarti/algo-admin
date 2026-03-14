@@ -18,14 +18,13 @@ const Input = ({
       {label && (
         <label
           className={clsx(
-            "font-inter font-normal mb-1 text-[1rem]  tracking-[-0.019rem]"
+            "font-inter font-semibold mb-1 text-[0.8rem] text-[var(--color-gray-500)] tracking-[-0.019rem]"
           )}
         >
           {label}
         </label>
       )}
-
-
+      
       {rest?.type === "textarea" ? (
         <div
           className={`bg-light flex w-full gap-3 rounded-lg p-3 transition-all duration-300 ease-in-out outline-none ${error
@@ -36,7 +35,6 @@ const Input = ({
           <span>
             <i className={`${icon} ri-lg text-dark font-light`} />{" "}
           </span>
-
 
           <textarea className="w-full outline-0" {...rest} />
         </div>
