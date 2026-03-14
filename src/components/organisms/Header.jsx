@@ -21,7 +21,7 @@ export default function Header({ onMenuClick }) {
             <Input
               placeholder="Search strategies, users, trades..."
               icon="ri-search-line text-gray-400"
-              className="bg-gray-100 border-none h-10 rounded-full pl-10 text-sm"
+              className="bg-gray-100  h-10 rounded-full  text-sm"
             />
           </div>
 
