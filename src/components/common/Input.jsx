@@ -1,5 +1,6 @@
-"use client"
+"use client";
 import clsx from "clsx";
+
 const Input = ({
   label,
   className = "",
@@ -10,55 +11,65 @@ const Input = ({
   valueKey,
   labelKey,
   labelRender,
-  icon = "ri-hashtag",
+  icon = "",
   ...rest
 }) => {
   return (
-    <div className="text-text-primary flex w-full flex-col gap-1">
+    <div className="flex w-full flex-col gap-1">
+      
       {label && (
         <label
-          className={clsx(
-            "font-inter font-semibold mb-1 text-[0.8rem] text-[var(--color-gray-500)] tracking-[-0.019rem]"
-          )}
+          className="font-inter font-semibold mb-1 text-[12px] text-[var(--color-gray-500)] uppercase tracking-wider"
         >
           {label}
         </label>
       )}
-      
+
       {rest?.type === "textarea" ? (
         <div
-          className={`bg-light flex w-full gap-3 rounded-lg p-3 transition-all duration-300 ease-in-out outline-none ${error
-            ? "border border-red-400 ring-2 ring-red-300 focus:ring-red-500"
-            : ""
-            } ${className}`}
-        >
-          <span>
-            <i className={`${icon} ri-lg text-dark font-light`} />{" "}
-          </span>
-
-          <textarea className="w-full outline-0" {...rest} />
-        </div>
-      ) : rest?.type === "select" ? (
-        <div
-          className={`bg-light flex w-full items-center gap-3 rounded-lg px-3 py-1 transition-all duration-300 ease-in-out outline-none ${error
-            ? "border border-red-400 ring-2 ring-red-300 focus:ring-red-500"
-            : ""
-            } ${className}`}
+          className={clsx(
+            "flex w-full gap-3 rounded-lg px-3 py-2 border border-gray-300 bg-white",
+            error && "border-red-400 ring-2 ring-red-300",
+            className
+          )}
         >
           {icon && (
             <span>
-              <i className={`${icon} ri-xl text-dark`}></i>
+              <i className={`${icon} ri-lg text-gray-400`} />
             </span>
           )}
-          <select
+
+          <textarea
+            className="w-full outline-none text-sm"
             {...rest}
-            className={`text-dark h-[45px] w-full rounded-sm text-sm outline-0 disabled:cursor-not-allowed disabled:opacity-50`}
+          />
+        </div>
+
+      ) : rest?.type === "select" ? (
+        <div
+          className={clsx(
+            "flex w-full items-center gap-3 rounded-lg px-3 py-1 border border-gray-300 bg-white",
+            error && "border-red-400 ring-2 ring-red-300",
+            className
+          )}
+        >
+          {icon && (
+            <span>
+              <i className={`${icon} ri-lg text-gray-400`} />
+            </span>
+          )}
+
+          <select
+            defaultValue=""
+            {...rest}
+            className="h-[45px] w-full text-sm outline-none bg-transparent"
           >
             {rest?.placeholder && (
               <option value="" disabled>
-                {rest?.placeholder}
+                {rest.placeholder}
               </option>
             )}
+
             {options.map((opt, idx) => (
               <option key={idx} value={opt[valueKey] || opt.value || opt}>
                 {labelRender
@@ -68,30 +79,33 @@ const Input = ({
             ))}
           </select>
         </div>
+
       ) : (
         <div
-          className={`bg-light flex w-full items-center gap-3 rounded-lg px-3 py-1 transition-all duration-300 ease-in-out outline-none ${error
-            ? "border border-red-400 ring-2 ring-red-300 focus:ring-red-500"
-            : ""
-            } ${className}`}
+          className={clsx(
+            "flex w-full items-center gap-3 rounded-lg px-3 py-1 border border-gray-300 bg-white",
+            error && "border-red-400 ring-2 ring-red-300",
+            className
+          )}
         >
-          <span>
-            <i className={`${icon} ri-lg text-dark font-light`} />{" "}
-          </span>
+          {icon && (
+            <span>
+              <i className={`${icon} ri-lg text-gray-400`} />
+            </span>
+          )}
+
           <input
             {...rest}
-            className={`text-dark h-[45px] w-full rounded-sm text-lg outline-0 disabled:cursor-not-allowed disabled:opacity-50`}
+            className="h-[45px] w-full text-sm outline-none bg-transparent"
           />
         </div>
       )}
 
-
-      {error && <span className="text-xs text-red-500">{error}</span>}
+      {error && (
+        <span className="text-xs text-red-500">{error}</span>
+      )}
     </div>
   );
 };
 
-
 export default Input;
-
-

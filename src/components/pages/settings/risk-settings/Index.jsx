@@ -23,7 +23,6 @@ const MainSettings = () => {
           placeholder="10"
           icon=""
           type="number"
-          className=" border border-gray-200 bg-[var(--color-white)]"
         />
         <p className="text-[13px] text-[var(--color-gray-500)]">Maximum position size as % of account balance</p>
       </div>
@@ -32,9 +31,7 @@ const MainSettings = () => {
         <Input
           label="Max Leverage"
           placeholder="5"
-          icon=""
           type="number"
-          className=" border border-gray-200 bg-[var(--color-white)]"
         />
         <p className="text-[13px] text-[var(--color-gray-500)]">Maximum allowed leverage multiplier</p>
       </div>
@@ -43,9 +40,7 @@ const MainSettings = () => {
         <Input
           label="Margin Requirement (%)"
           placeholder="20"
-          icon=""
           type="number"
-          className=" border border-gray-200 bg-[var(--color-white)]"
         />
         <p className="text-[13px] text-[var(--color-gray-500)]">Minimum margin required for positions</p>
       </div>
@@ -62,27 +57,21 @@ const MainSettings = () => {
         <Input
           label="Max Loss Per Trade (%)"
           placeholder="2"
-          icon=""
           type="number"
-          className="border border-gray-200 bg-[var(--color-white)]"
         />
       </div>
       <div className="space-y-2">
         <Input
           label="Max Daily Loss (%)"
           placeholder="5"
-          icon=""
            type="number"
-          className="border border-gray-200 bg-[var(--color-white)]"
         />
       </div>
       <div className="space-y-2">
         <Input
           label="Max Drawdown (%)"
-          icon=""
            type="number"
           placeholder="15"
-          className="border border-gray-200 bg-[var(--color-white)]"
         />
       </div>
     </div>
@@ -97,13 +86,11 @@ const MainSettings = () => {
       <Input
         label="Risk:Reward Ratio"
         type="select"
-        icon=""
         options={[
           { label: "1:2", value: "1:2" },
           { label: "1:3", value: "1:3" }
         ]}
         defaultValue="1:2"
-        className="border border-gray-200 bg-[var(--color-white)]"
       />
       <p className="text-[13px] text-slate-500">Minimum risk to reward ratio for trades</p>
     </div>

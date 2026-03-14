@@ -17,8 +17,6 @@ const RateLimiting = () => {
           label="Rate Limit (per minute)"
           placeholder="100"
           type="number"
-          icon=""
-          className="border border-gray-200 bg-[var(--color-white)]"
         />
         <p className="text-[13px] mt-2 text-[var(--color-gray-500)]">
           Maximum webhooks allowed per minute
@@ -30,8 +28,6 @@ const RateLimiting = () => {
           label="Retry Attempts"
           placeholder="3"
           type="number"
-          icon=""
-          className="border border-gray-200 bg-[var(--color-white)]"
         />
         <p className="text-[13px] mt-2 text-[var(--color-gray-500)]">
           Number of retry attempts for failed webhooks
@@ -43,8 +39,7 @@ const RateLimiting = () => {
           label="Timeout (seconds)"
           placeholder="30"
           type="number"
-          icon=""
-          className="border border-gray-200 bg-[var(--color-white)]"
+
         />
         <p className="text-[13px] mt-2 text-[var(--color-gray-500)]">
           Request timeout in seconds

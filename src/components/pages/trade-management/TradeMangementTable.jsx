@@ -16,8 +16,6 @@ const TableActions = ({ row }) => {
 const TradeMangementTable = () => {
   return (
     <div className="mt-5">
-
-      {/* Filters */}
       <div className="w-full bg-[var(--color-white)] border border-gray-200 rounded-2xl p-6 shadow-sm">
 
         <div className="flex items-center gap-2 mb-6 text-[var(--color-gray-800)]">
@@ -30,16 +28,12 @@ const TradeMangementTable = () => {
           <Input
             label="DATE FROM"
             type="date"
-            className="border border-gray-200 bg-[var(--color-white)] rounded-xl h-[48px]"
-            labelClass="text-[10px] font-bold text-slate-400 uppercase tracking-wider"
             icon=""
           />
 
           <Input
             label="DATE TO"
             type="date"
-            className="border border-gray-200 h-[48px]"
-            labelClass="text-[10px] font-bold text-slate-400 uppercase tracking-wider"
             icon=""
           />
 
@@ -48,8 +42,6 @@ const TradeMangementTable = () => {
             type="select"
             placeholder="All Strategies"
             options={["Scalping", "Intraday", "Swing"]}
-            className="border border-gray-200 h-[48px]"
-            labelClass="text-[10px] font-bold text-slate-400 uppercase tracking-wider"
             icon=""
           />
 
@@ -58,8 +50,6 @@ const TradeMangementTable = () => {
             type="select"
             placeholder="All Brokers"
             options={["Angel One", "Zerodha", "Upstox"]}
-            className="border border-gray-200 h-[48px]"
-            labelClass="text-[10px] font-bold text-slate-400 uppercase tracking-wider"
             icon=""
           />
 
@@ -68,8 +58,6 @@ const TradeMangementTable = () => {
             type="select"
             placeholder="All Status"
             options={["Active", "Completed", "Pending"]}
-            className="border border-gray-200 h-[48px]"
-            labelClass="text-[10px] font-bold text-slate-400 uppercase tracking-wider"
             icon=""
           />
 
@@ -78,8 +66,6 @@ const TradeMangementTable = () => {
             type="select"
             placeholder="All Types"
             options={["Buy", "Sell"]}
-            className="border border-gray-200 h-[48px]"
-            labelClass="text-[10px] font-bold text-slate-400 uppercase tracking-wider"
             icon=""
           />
 

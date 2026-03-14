@@ -19,14 +19,10 @@ const Mainglobal = () => {
             <Input
               label="PLATFORM NAME"
               placeholder="Trading Platform"
-              icon="ri-layout-grid-line" 
-              className="border-gray-200 border bg-slate-50/50"
             />
             <Input
               label="SUPPORT EMAIL"
               placeholder="support@platform.com"
-              icon="ri-mail-line"
-              className="border-gray-200 border bg-slate-50/50"
             />
           </div>
         </section>
@@ -38,8 +34,6 @@ const Mainglobal = () => {
                 label="MAX TRADES PER STRATEGY"
                 placeholder="50"
                 type="number"
-                icon="ri-line-chart-line"
-                className="border-gray-200 border bg-slate-50/50"
               />
               <p className="mt-2 text-xs text-[var(--color-gray-400)]">Maximum trades allowed per strategy per day</p>
             </div>
@@ -49,8 +43,6 @@ const Mainglobal = () => {
                 label="MAX TRADES PER USER"
                 placeholder="20"
                 type="number"
-                icon="ri-user-settings-line"
-                className="border-gray-200 border bg-slate-50/50"
               />
               <p className="mt-2 text-xs text-[var(--color-gray-400)]">Maximum trades allowed per user per day</p>
             </div>
@@ -59,14 +51,12 @@ const Mainglobal = () => {
               <Input
                 label="DEFAULT RISK LEVEL"
                 type="select"
-                icon="ri-shield-flash-line"
                 options={[
                   { label: "Low", value: "low" },
                   { label: "Medium", value: "medium" },
                   { label: "High", value: "high" },
                 ]}
                 defaultValue="medium"
-                className="border-gray-200 border bg-slate-50/50"
               />
             </div>
           </div>
