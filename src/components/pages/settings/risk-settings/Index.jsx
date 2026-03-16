@@ -10,10 +10,7 @@ const MainSettings = () => {
       title="Risk Settings"
       paragraph="Configure risk management parameters"
     />
-
-
     <div className="rounded-2xl border border-gray-100 bg-[var(--color-white)] mt-5 p-8 shadow-sm">
-  {/* 1. Position Limits Section */}
   <section>
     <h2 className="mb-6 text-xl font-semibold text-slate-800">Position Limits</h2>
     <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
@@ -49,7 +46,6 @@ const MainSettings = () => {
 
   <hr className="my-8 border-gray-100" />
 
-  {/* 2. Loss Limits Section */}
   <section>
     <h2 className="mb-6 text-xl font-semibold text-[var(--color-gray-800)]">Loss Limits</h2>
     <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
@@ -78,8 +74,6 @@ const MainSettings = () => {
   </section>
 
   <hr className="my-8 border-gray-100" />
-
-  {/* 3. Risk Parameters Section */}
   <section>
     <h2 className="mb-6 text-xl font-semibold text-[var(--color-gray-800)]">Risk Parameters</h2>
     <div className="max-w-md space-y-2">

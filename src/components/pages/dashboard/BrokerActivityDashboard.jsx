@@ -1,5 +1,6 @@
 import React from 'react';
 import { CheckCircle2, AlertCircle, Wifi, Circle } from 'lucide-react';
+import Button from '@/components/common/Button';
 
 const BrokerActivityDashboard = () => {
   const brokers = [
@@ -58,7 +59,7 @@ const BrokerActivityDashboard = () => {
             <h2 className="text-xl font-bold text-slate-800">Recent Activity</h2>
             <p className="text-sm text-slate-400">Latest platform events</p>
           </div>
-          <button className="text-sm font-semibold text-blue-600 hover:underline">View all</button>
+          <Button variant="secondary">View all</Button>
         </div>
 
         <div className="space-y-6">

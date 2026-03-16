@@ -7,6 +7,7 @@ const variantClasses = {
   primary: "bg-white border border-gray-300",
   success: "bg-green-500 text-white",
   danger: "bg-white text-red-500 border border-red-400",
+  secondary:"text-blue-500",
   gradientcolor:"bg-gradient-to-r from-[#3b82f6] to-[#7c3aed] text-white font-bold "
 };
 

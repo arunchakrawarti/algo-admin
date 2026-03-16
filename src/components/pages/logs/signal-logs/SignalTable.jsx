@@ -2,6 +2,7 @@
 import BasicTable from "@/components/common/BasicTable";
 import { LucideEye } from "lucide-react"; 
 import clsx from "clsx";
+import Button from "@/components/common/Button";
 
 const SignalTable = () => {
   const columns = [
@@ -43,9 +44,9 @@ const SignalTable = () => {
     { logId: "LOG-5681", signalId: "SIG-2348", strategy: "Nifty Trend Following", status: "Rejected", time: "06/03/2026, 11:02:34" },
   ];
   const ViewAction = ({ row }) => (
-    <button>
+    <Button variant="outline">
       <LucideEye size={18} />
-    </button>
+    </Button>
   );
 
   return (

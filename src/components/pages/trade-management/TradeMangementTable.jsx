@@ -4,12 +4,13 @@ import { Filter, Eye } from "lucide-react";
 import Input from "@/components/common/Input";
 import BasicTable from "@/components/common/BasicTable";
 import { tradeTableConfig } from "../../../config/tradetable";
+import Button from "@/components/common/Button";
 
 const TableActions = ({ row }) => {
   return (
-    <button className="text-[var(--color-gray-400)] hover:text-blue-600 transition-colors">
+    <Button variant="outline">
       <Eye size={18} />
-    </button>
+    </Button>
   );
 };
 

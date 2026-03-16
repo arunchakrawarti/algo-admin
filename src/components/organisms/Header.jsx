@@ -6,8 +6,6 @@ export default function Header({ onMenuClick }) {
   return (
     <header className="sticky top-0 z-40 w-full bg-[var(--color-white)] shadow">
       <div className="flex items-center justify-between px-4 md:px-6 py-3">
-
-        {/* LEFT SIDE */}
         <div className="flex items-center gap-3 w-full max-w-md">
 
           <Button
@@ -26,11 +24,8 @@ export default function Header({ onMenuClick }) {
           </div>
 
         </div>
-
-        {/* RIGHT SIDE */}
         <div className="flex items-center gap-4">
 
-          {/* monitor icon */}
           <button className="text-gray-500 text-lg hover:text-gray-700">
             <i className="ri-computer-line"></i>
           </button>
