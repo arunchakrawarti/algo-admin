@@ -6,7 +6,7 @@ import SubscriptionTable from './SubscriptionTable'
 const Mainsubscription = () => {
   return (
     <div>
-      <Heading
+  <Heading
   title="Subscription Plans"
   paragraph="Manage subscription plans and pricing"
   actions={[

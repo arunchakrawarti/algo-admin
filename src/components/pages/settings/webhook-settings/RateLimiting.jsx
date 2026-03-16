@@ -39,7 +39,6 @@ const RateLimiting = () => {
           label="Timeout (seconds)"
           placeholder="30"
           type="number"
-
         />
         <p className="text-[13px] mt-2 text-[var(--color-gray-500)]">
           Request timeout in seconds

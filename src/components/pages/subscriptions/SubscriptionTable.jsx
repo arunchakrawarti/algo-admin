@@ -1,5 +1,4 @@
 "use client";
-
 import BasicTable from "@/components/common/BasicTable";
 import { planTableConfig } from "../../../config/plantable";
 
